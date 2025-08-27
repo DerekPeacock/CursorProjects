@@ -1,4 +1,5 @@
 import React from 'react'
+import PhaserGame from './components/PhaserGame'
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
                 <a href="#home" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                 <a href="#features" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
                 <a href="#about" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                <a href="#game" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Game</a>
                 <a href="#contact" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
               </div>
             </div>
@@ -131,6 +133,19 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* Game Section */}
+      <section id="game" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Play Our Game</h2>
+            <p className="text-gray-600 mt-2">A simple platformer built with Phaser.</p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <PhaserGame />
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -238,4 +253,6 @@ const App: React.FC = () => {
 }
 
 export default App
+
+
 
